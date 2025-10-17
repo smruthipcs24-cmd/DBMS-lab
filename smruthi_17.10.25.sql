@@ -15,6 +15,8 @@ INSERT INTO Branch VALUES
 ('SBI_ParliamentRoad', 'Delhi', 3000),
 ('SBI_JantarMantar', 'Delhi', 4000);
 
+select*from Branch;
+
 CREATE TABLE BankAccount (
   ACCNO INT PRIMARY KEY,
   BRANCHNAME VARCHAR(50),
@@ -29,6 +31,8 @@ INSERT INTO BankAccount VALUES
 (4, 'SBI_ParliamentRoad', 3000),
 (5, 'SBI_JantarMantar', 4000);
 
+select*from BankAccount;
+
 CREATE TABLE BankCustomer (
   CUSTOMERNAME VARCHAR(50) PRIMARY KEY,
   CUSTOMERSTREET VARCHAR(100),
@@ -41,6 +45,8 @@ INSERT INTO BankCustomer VALUES
 ('Mohan', 'NationalCollege_Road', 'Bangalore'),
 ('Nikil', 'Gandhi_Bazaar', 'Bangalore'),
 ('Ravi', 'Prithviraj_Road', 'Delhi');
+
+select*from BankCustomer;
 
 CREATE TABLE Loan (
   LOANNUMBER VARCHAR(10) PRIMARY KEY,
@@ -55,6 +61,8 @@ INSERT INTO Loan VALUES
 ('L3', 'SBI_ShivajiRoad', 3000),
 ('L4', 'SBI_ParliamentRoad', 4000),
 ('L5', 'SBI_JantarMantar', 5000);
+
+select*from Loan; 
 
 CREATE TABLE Depositor (
   CUSTOMERNAME VARCHAR(50),
@@ -75,6 +83,8 @@ INSERT INTO Depositor VALUES
 ('Dinesh', 4),
 ('Nikil', 5);
 
+select*from Depositor;
+
 select BRANCHNAME, ASSETS AS ASSETS_IN_LAKHS
 FROM Branch;
 
@@ -91,5 +101,4 @@ GROUP BY BRANCHNAME;
 
 select*from LOANS_AT_BRANCH;
 
-select city 
 
